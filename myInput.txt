@@ -1,0 +1,12 @@
+insert Blind Lemon Jefferson<SEP>Long Lonesome Blues
+insert Ma Rainey<SEP>Ma Rainey's Black Bottom
+insert Robert Johnson<SEP>Cross Road Blues
+insert Blind Lemon Jefferson<SEP>See That My Grave Is Kept Clean
+print song
+print artist
+remove song Long Lonesome Blues
+remove artist Ma Rainey
+print song
+print artist
+print graph
+wtf

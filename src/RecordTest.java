@@ -1,0 +1,103 @@
+import student.TestCase;
+
+/**
+ * Project 4
+ */
+
+/**
+ * Test class for the Record class
+ *
+ * @author {Stephen Ye}
+ * @version {11/20/2023}
+ */
+
+// On my honor:
+// - I have not used source code obtained from another current or
+// former student, or any other unauthorized source, either
+// modified or unmodified.
+//
+// - All source code and documentation used in my program is
+// either my original work, or was derived by me from the
+// source code published in the textbook for this course.
+//
+// - I have not discussed coding details about this project with
+// anyone other than my partner (in the case of a joint
+// submission), instructor, ACM/UPE tutors or the TAs assigned
+// to this course. I understand that I may discuss the concepts
+// of this program with other students, and that another student
+// may help me debug my program so long as neither of us writes
+// anything during the discussion or modifies any computer file
+// during the discussion. I have violated neither the spirit nor
+// letter of this restriction.
+public class RecordTest extends TestCase {
+
+    /**
+     * Sets up the tests that follow
+     */
+    public void setUp() {
+        // empty on purpose
+    }
+
+
+    /**
+     * Test method for the getKey() in the Record class.
+     * It checks if the getKey() method returns the correct key.
+     */
+    public void testGetKey() {
+        Node node = new Node(1);
+        Record record = new Record("testKey", node);
+        assertEquals("testKey", record.getKey());
+    }
+
+
+    /**
+     * Test method for the getNode() in the Record class.
+     */
+    public void testGetNode() {
+        Node node = new Node(1);
+        Record record = new Record("testKey", node);
+        assertEquals(node, record.getNode());
+    }
+
+
+    /**
+     * Test method for the isTombstone() and setTombstone().
+     */
+    public void testIsTombstone() {
+        Node node = new Node(1);
+        Record record = new Record("testKey", node);
+        assertFalse(record.isTombstone());
+
+        record.setTombstone(true);
+        assertTrue(record.isTombstone());
+    }
+
+
+    /**
+     * Test method for the setKey().
+     */
+    public void testSetKey() {
+        Node node = new Node(1);
+        Record record = new Record("testKey", node);
+        assertEquals("testKey", record.getKey());
+
+        record.setKey("newKey");
+        assertEquals("newKey", record.getKey());
+    }
+
+
+    /**
+     * Test method for the setNode()
+     */
+    public void testSetNode() {
+        Node node = new Node(1);
+        Record record = new Record("testKey", node);
+        assertEquals(node, record.getNode());
+
+        // Test setNode method
+        Node newNode = new Node(1);
+        record.setNode(newNode);
+        assertEquals(newNode, record.getNode());
+    }
+
+}

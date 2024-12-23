@@ -1,0 +1,6 @@
+insert Blind Lemon Jefferson<SEP>Long Lonesome Blues
+insert Blind Lemon Jefferson<SEP>long Lonesome Blues
+insert blind Lemon Jefferson<SEP>Long Lonesome Blues
+insert blind Lemon Jefferson<SEP>long Lonesome Blues
+print song
+print artist
